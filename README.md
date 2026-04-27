@@ -1,21 +1,28 @@
-# React + Vite
+# Components Grading
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prepare
 
-Currently, two official plugins are available:
+```bash
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Start server
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run dev
+```
 
-## Backend Server
 
-The project includes a Node.js Express server (`server.js`) that handles authentication and session refresh endpoints.
+## Storybook
 
-### Managing the Server in Background
+```bash
+npm run storybook
+```
+
+
+
+### Managing Auth Server in Background
 
 You can manage the server as a background process using **PM2** (Process Manager 2). The following scripts are available in `package.json`:
 
@@ -25,7 +32,3 @@ You can manage the server as a background process using **PM2** (Process Manager
 - **View logs**: `npm run server:logs`
 
 For a standard development start (foreground), you can still use `npm run server` or `npm start`.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
